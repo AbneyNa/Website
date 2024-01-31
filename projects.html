@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projects - Nathan Abney</title>
+</head>
+
+<body>
+    <header class="bg-dark text-light py-3">
+        <div class="container">
+            <h1 class="display-4">Nathan Abney</h1>
+            <p class="lead">Software Engineer</p>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resume.html">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <section>
+            <h2>Projects</h2>
+            
+            <h3>Softball Tournament Website (Senior Design Project)</h3>
+            <p>I am actively working on a website for my senior design project with a group for the Church of Nazarene Softball Tournament.
+                Hosted on an EC2 instance using pm2, next.js, and sqlite.
+                <a href="https://www.naznationals.com/" target="_blank">Visit Website</a>
+            </p>
+            <ul>
+                <li>Specifically, I have migrated the system from EC2 to Openstack, and am actively working on migration from sqlite to MySQL.</li>
+                <li>One of the main learning points of the project (so far) has been learning how to manage legacy code and document code for
+                    future developers. </li>
+            </ul>
+
+            <h3>Course Project (Intro To Software Engineering)</h3>
+            <p>A group project where we made a web-server using flask and sqlite. It was made as a library interface that uses Amazon’s book database.</p>
+            <ul>
+                <li>Through this project, I learned how to work with languages that I wasn't familiar with as well as how to incorporate databases in Flask.</li>
+            </ul>
+
+            <h3>Course Project (Data Structures)</h3>
+            <p>Created a GPS Application that, using a list of addresses, distances, and times on roads will find the shortest route locally using Djikstra’s algorithm.</p>
+            <ul>
+                <li>Through this project, I learned about complex data structures and how to incorporate them into functional applications.</li>
+            </ul>
+
+            <h3>Course Project (Systems I)</h3>
+            <p>I made a functional online 2 player Tic-Tac-Toe server and client with a classmate in C++ using the C++ web sockets to link clients through the network.</p>
+            <ul>
+                <li>This project was particularly a fun one because my classmate and I were struggling with web sockets, and we had spent many nights staying up late in
+                    order to figure out how they exactly worked.</li>
+            </ul>
+
+            <h3>Extinction’s Edge (Free Time)</h3>
+            <p>This was a fun little side project I created over the summer of 2023. It's a top-down rogue-like game 
+                where you fight through a dungeon as a dinosaur. It's available on Itch.io made in Godot using GDScript and good programming practices. 
+                <a href="https://costellae-studios.itch.io/extinctions-edge" target="_blank">Play Game</a>
+            </p>
+            <ul>
+                <li>Within this project, I learned how capable I am of creating software entirely on my own. Beyond academics or professional applications, I do
+                    have a passion for software and this little game I made was a reminder about that.
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
