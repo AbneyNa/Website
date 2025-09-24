@@ -1,86 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Nathan Abney - Software Engineer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathan Abney</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="bg-dark text-light py-3">
-        <div class="container">
-            <h1 class="display-4">Nathan Abney</h1>
-            <p class="lead">Software Engineer</p>
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="projects.html">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="resume.html">Resume</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+  <section class="landing">
+    <div class="intro">
+      <div class="intro-overlay">
+        <h1>Nathan Abney</h1>
+        <p>Software Engineer</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="tile" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">
+        About Me
+        <div class="desc">Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</div>
+      </div>
+      <div class="tile" onclick="document.getElementById('experience').scrollIntoView({ behavior: 'smooth' });">
+        Experience
+        <div class="desc">Donec ullamcorper nulla non metus auctor fringilla.</div>
+      </div>
+      <div class="tile" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">
+        Projects
+        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      </div>
+      <div class="tile" onclick="document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });">
+        Skills
+        <div class="desc">Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula.</div>
+      </div>
+    </div>
+  </section>
 
-    <main class="container mt-4 content-wrapper">
-        <section>
-            <h2 class="mb-4">About Me</h2>
-            <h3>Welcome.</h3>
-            <p>I'm Nathan Abney - a Software Engineering major studying at Miami University. I was born and raised in Trenton, Ohio ,
-                where I found my love for software development in my junior year of high school. Mr. Orlando, my engineering teacher, 
-                allowed his students to create something that they wanted to create within reason and accompany it with a written
-                summary regarding what they learned towards engineering. Given that opportunity, I decided to ask him if I
-                could make a video game about him. Eager to see what I had in mind, he allowed me to give it a go.</p>
+  <section id="about">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:40px;">About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
 
-            <p>At the time neither him nor I knew anything about software, so he purchased me a Raspberry Pi 3 B+,
-                the computer in which I used Pygame to create the game. Later on, I decided to migrate it to p5.js.
-                Although it isn't exactly a masterpiece, it's a fun reminder to go back and see where I started.
-                You can even check it out
-                <a href="https://editor.p5js.org/MysticalMiner/full/Cjahqfsax" target="_blank">here</a>.</p>
+  <section id="experience">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:40px;">Experience & Education</h2>
+    <div class="timeline" id="experience">
+      <div class="timeline-entry">
+        <h3>Applied Research Associates</h3>
+        <h4>Junior Software Engineer</h4>
+        <p><em>May 2024 - Present</em></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in.</p>
+      </div>
+      <div class="timeline-entry">
+        <h3>Miami University</h3>
+        <h4>Bachelor of Science in Software Engineering</h4>
+        <p><em>Graduated May 2024</em></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.</p>
+      </div>
+    </div>
+  </section>
 
-            <p>Currently, I am working as a Computational Technical Intern at Applied Research Associates.
-                I've been hard at work in the Applied Electromagnetics Division.
-            </p>
-            
-            <p>With my current experience, I'd like to emphasize that my future will be exciting
-                with more developments yet to come. Allow me to be part of your team, and you'll be adding a
-                self-motivated, hard-working, and knowledgeable asset.</p>
-        </section>
-    </main>
+  <section id="projects">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:40px;">Projects</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <section id="skills">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:40px;">Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>Fortran</li>
+      <li>Linux Systems</li>
+      <li>Git</li>
+      <li>Qt</li>
+      <li>AGILE</li>
+    </ul>
+  </section>
 
-    <footer class="bg-dark text-light py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <p>Connect with me:</p>
-                    <a href="https://github.com/NathanAbney" target="_blank" class="text-light me-3"><i class="bi bi-github"></i>Github</a>
-                    <a href="https://www.linkedin.com/in/nathan-abney-b875a8263/" target="_blank" class="text-light me-3"><i class="bi bi-linkedin"></i>LinkedIn</a>
-                </div>
-            </div>
-        </div>
+  <section id="contact"></section>
+    <footer>
+      <div>
+        <a href="https://github.com/AbneyNa">GitHub</a>
+        <a href="https://www.linkedin.com/in/nathan-abney-b875a8263/">LinkedIn</a>
+        <a href="mailto:Nathan.Abney2002@gmail.com">Email</a>
+      </div>
+      <p>&copy; 2025 Nathan Abney</p>
     </footer>
+  </section>
 </body>
-
 </html>
